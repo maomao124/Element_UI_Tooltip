@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Tooltip
+  File name(文件名): test3
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/6
+  Time(创建时间)： 14:21
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+    <style>
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div class="box">
+        <el-tooltip placement="top">
+            <div slot="content">多行信息<br/>第二行信息<br/>第三行信息<br/>第四行信息</div>
+            <el-button>Top center</el-button>
+        </el-tooltip>
+    </div>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
